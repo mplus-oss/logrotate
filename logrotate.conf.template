@@ -1,0 +1,8 @@
+daily
+rotate $RETENTION_DAYS
+compress
+delaycompress
+missingok
+notifempty
+copytruncate
+/logs/*/*.log {}
