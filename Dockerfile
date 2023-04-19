@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:edge
 LABEL org.opencontainers.image.authors="Syahrial Agni Prasetya <syahrial@mplus.software>"
 LABEL org.opencontainers.image.licenses="GPL-2.0"
 LABEL org.opencontainers.image.vendor="M+ Software"
