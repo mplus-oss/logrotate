@@ -1,8 +1,10 @@
-daily
-rotate $RETENTION_DAYS
 compress
-delaycompress
-missingok
-notifempty
-copytruncate
-/logs/*/*.log {}
+
+/var/log/odoo/*.log {
+  daily
+  rotate $RETENTION_DAYS
+  missingok
+  notifempty
+  copytruncate
+  delaycompress
+}
