@@ -1,6 +1,6 @@
 compress
 
-/var/log/odoo/*.log {
+/logs/*.log {
   daily
   rotate $RETENTION_DAYS
   missingok
