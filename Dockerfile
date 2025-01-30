@@ -10,7 +10,7 @@ ENV ODOO_LOGFILE=/logs/odoo.log
 
 RUN set -ex; \
     echo 'https://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/apk/repositories; \
-    apk add --no-cache logrotate cronie envsubst htop;
+    apk add --no-cache logrotate cronie envsubst htop runuser;
 
 COPY logrotate.conf.template /etc/logrotate.conf.template
 COPY --chmod=755 ./entrypoint.sh /usr/bin/entrypoint.sh

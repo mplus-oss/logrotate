@@ -8,4 +8,4 @@ chmod 644 /etc/logrotate.conf
 
 echo "INFO: Running Odoo Log in sidecar mode."
 crond -n &
-su - odoo -c "safe-start.sh '$ODOO_LOGFILE'"
+runuser -u odoo -- safe-start.sh '$ODOO_LOGFILE'
